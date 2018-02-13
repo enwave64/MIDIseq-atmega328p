@@ -29,14 +29,14 @@ Midi_Send(0x90,cMinor[i],0x45);
 
 In this case, 0x90 is a note on message, cMinor[i] is giving a randomly selected value from a scale table array (a possible approach to generative composition), and the 0x45 is a value for the velocity of the note).
 
-The heart of the generative functionality of the sequencer is based on Gen_Rand(x,y), a wrapper function for the C language pseudo-random rand() function that takes a min and max argument.
+The heart of the generative functionality of the sequencer is based on Rand_Gen(x,y), a wrapper function for the C language pseudo-random rand() function that takes a min and max argument.
 
 Program Flow (pseudo code):
 
 	Run forever:
 
 	if Button 1 is pushed: start sequencer; if pressed again stop sequencer.
-		Sequencer uses Gen_Rand() to determine  the interval between notes and other midi outputs.
+		Sequencer uses Rand_Gen() to determine  the interval between notes and other midi outputs.
 	if Button 2 is pushed, enable/disable Modulator and Carrier Decay randomization.
 	if Button 3 is pushed, enable/disable FM Algorithm randomization
 
