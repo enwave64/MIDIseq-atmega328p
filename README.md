@@ -40,6 +40,7 @@ Program Flow (pseudo code):
 	if Button 2 is pushed, enable/disable Modulator and Carrier Decay randomization.
 	if Button 3 is pushed, enable/disable FM Algorithm randomization
 
-ADC read knob1: Time interval multiplier is based on 1 of 8 values (1024/128) to increase the duration scale of the MIDI message intervals (apparent rhythm)
-ADC read knob 2: Knob resolution is divided into 3 positions via if/else branching, determining whether the scale/note space uses C Minor scale, All C notes, or FMajor7 chord.
+	ADC read knob1: Time interval multiplier is based on 1 of 8 values (1024/128) to increase the duration scale of the MIDI message intervals (apparent rhythm)
+	
+	ADC read knob 2: Knob resolution is divided into 3 positions via if/else branching, determining whether the scale/note space uses C Minor scale, All C notes, or FMajor7 chord.
 
