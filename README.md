@@ -29,7 +29,7 @@ Midi_Send(0x90,cMinor[i],0x45);
 
 In this case, 0x90 is a note on message, cMinor[i] is giving a randomly selected value from a scale table array (a possible approach to generative composition), and the 0x45 is a value for the velocity of the note).
 
-	The heart of the generative functionality of the sequencer is based on Gen_Rand(x,y), a wrapper function for the C language pseudo-random rand() function that takes a min and max argument.
+The heart of the generative functionality of the sequencer is based on Gen_Rand(x,y), a wrapper function for the C language pseudo-random rand() function that takes a min and max argument.
 
 Program Flow (pseudo code):
 
@@ -39,6 +39,6 @@ Run forever:
 	if Button 2 is pushed, enable/disable Modulator and Carrier Decay randomization.
 	if Button 3 is pushed, enable/disable FM Algorithm randomization
 
-	ADC read knob1: Time interval multiplier is based on 1 of 8 values (1024/128) to increase the duration scale of the MIDI message intervals (apparent rhythm)
-	ADC read knob 2: Knob resolution is divided into 3 positions via if/else branching, determining whether the scale/note space uses C Minor scale, All C notes, or FMajor7 chord.
+ADC read knob1: Time interval multiplier is based on 1 of 8 values (1024/128) to increase the duration scale of the MIDI message intervals (apparent rhythm)
+ADC read knob 2: Knob resolution is divided into 3 positions via if/else branching, determining whether the scale/note space uses C Minor scale, All C notes, or FMajor7 chord.
 
