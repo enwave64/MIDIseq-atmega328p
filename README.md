@@ -34,6 +34,7 @@ The heart of the generative functionality of the sequencer is based on Gen_Rand(
 Program Flow (pseudo code):
 
 Run forever:
+
 	if Button 1 is pushed: start sequencer; if pressed again stop sequencer.
 		Sequencer uses Gen_Rand() to determine  the interval between notes and other midi outputs.
 	if Button 2 is pushed, enable/disable Modulator and Carrier Decay randomization.
