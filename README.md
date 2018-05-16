@@ -44,3 +44,4 @@ Program Flow (pseudo code):
 	
 	ADC read knob 2: Knob resolution is divided into 3 positions via if/else branching, determining whether the scale/note space uses C Minor scale, All C notes, or FMajor7 chord.
 
+![alt text](https://github.com/enwave64/MIDIseq-atmega328p/blob/master/midiseq1.jpg)
