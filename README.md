@@ -14,6 +14,7 @@ Peripherals: Korg Volca FM digital synthesizer (MIDI in), MIDI cable, audio cabl
 Project dedicated hours: 8 hours of research, exploration, and valuation; 12 hours of development and testing.
 
 Synopsis:  Generative Midi Sequencer
+
 The basis of my project uses knobs and buttons of the DFrobot MIDI shield to guide probability based MIDI compositions as MIDI output data to some external MIDI controlled synthesizer or drum machine. The microcontroller acts as a probabilistic generating hub, where the user input of changing the values of the knobs and pressing the buttons have obvious effects on the looping but generative note structure.
 The embedded software makes use of the Atmega328P’s  UART Serial via 5 pin DIN MIDI cable. MIDI uses a baud rate of 31250. Additionally, the 328’s ADC is used to handle DFrobot’s analog potentiometers. Timer1 and an interrupt are used to trigger the MIDI outputs based on generated interval times, corresponding to a changing OCR1A as the max for the timer/counter.
 The structure of MIDI output messages follow the above function definition:
