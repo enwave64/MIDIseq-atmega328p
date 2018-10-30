@@ -2,7 +2,7 @@
  * ElliottWatson_CompE375_FinalProject.c
  *
  * Created: 12/6/2017 7:16:35 PM
- * Author : Elliott Watson enwav@Darkhorse (enwave@hotmail.com; elliottnicholaswatson@gmail.com)
+ * Author : Elliott Watson enwav@Darkhorse 
  * 
  * This program is a generative MIDI sequencer using UART Serial over 5 pin DIN MIDI cable, 
  * 16 bit AVR Timer1 with an interrupt for interval based MIDI message ouput
